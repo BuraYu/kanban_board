@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 *,
 *::before,
 *::after {
@@ -44,3 +46,76 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  /*Colors*/
+
+  --primary-blue-violet: #635fc7;
+  --secondary-light-violet: #a8a4ff;
+
+  --dark-grayish-blue: #2b2c37;
+  --medium-grayish-blue: #3e3f4e;
+
+  --pure-white: #ffffff;
+  --light-background: #f4f7fd;
+
+  --almost-black: #000112;
+  --neutral-gray: #828fa3;
+
+  --error-red: #ea5555;
+  --light-error-pink: #ff9898;
+
+  --pale-blue-background: #e4ebfa;
+
+  --dark-background: #20212c;
+
+  /* Fonts */
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-heading-xl {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.875;
+}
+
+.font-heading-l {
+  font-family: var(--font-primary);
+  font-size: 1.125rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4375;
+}
+.font-heading-m {
+  font-family: var(--font-primary);
+  font-size: 0.9375rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1875;
+}
+.font-heading-s {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 0.9375;
+}
+
+.font-body-l {
+  font-family: var(--font-primary);
+  font-size: 0.8125;
+  line-height: 1.4375;
+}
+
+.font-body-m {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  line-height: 0.9375;
+}
+
