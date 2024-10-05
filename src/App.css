@@ -108,6 +108,8 @@ h6 {
   font-style: normal;
   line-height: 0.9375;
   letter-spacing: 0.15rem;
+  color: var(--neutral-gray);
+  text-transform: uppercase;
 }
 
 .font-body-l {
@@ -121,3 +123,4 @@ h6 {
   font-size: 0.75rem;
   line-height: 0.9375;
 }
+

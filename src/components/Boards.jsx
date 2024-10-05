@@ -1,6 +1,8 @@
 import "./Boards.css";
 import "../App.css";
 import { useState } from "react";
+import board from "../assets/icon-board.svg";
+import { ReactComponent as Logo } from "../assets/icon-board.svg";
 
 const Boards = () => {
   const [boards, setBoards] = useState([
@@ -20,11 +22,25 @@ const Boards = () => {
       <div className="logo">Kanban</div>
       <div className="main-content">
         <div className="boards-list">
-          <span className="boards-count">All boards ({boards.length})</span>
+          <span className="boards-count font-heading-s">
+            All boards ({boards.length})
+          </span>
           {boards.map((ele, index) => {
-            return <h1>{boards[index].name}</h1>;
+            return (
+              <div className="list-element">
+                <img className="board-image" src={board} alt="" />
+                <h1 className="font-heading-m">{boards[index].name}</h1>
+              </div>
+            );
           })}
-          <span className="create-new-board">+ create new boards</span>
+          <div className="create-element">
+            <div className="board-icon">
+              <Logo className="board-image1" />
+            </div>{" "}
+            <span className="create-new-board font-heading-m">
+              + Create new boards
+            </span>
+          </div>
         </div>
         <div className="sidebar-control">
           <div className="dark-mode">darkmode</div>
