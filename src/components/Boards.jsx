@@ -18,17 +18,17 @@ const Boards = () => {
   return (
     <div className="boards--container">
       <div className="logo">Kanban</div>
-      <div className="name-unknown">
+      <div className="main-content">
         <div className="boards-list">
-          <span>All boards ({boards.length})</span>
+          <span className="boards-count">All boards ({boards.length})</span>
           {boards.map((ele, index) => {
             return <h1>{boards[index].name}</h1>;
           })}
-          <span>+ create new boards</span>
+          <span className="create-new-board">+ create new boards</span>
         </div>
-        <div className="low-container">
+        <div className="sidebar-control">
           <div className="dark-mode">darkmode</div>
-          <span>Hide Sidebar</span>
+          <span className="hide-sidebar-label">Hide Sidebar</span>
         </div>
       </div>
     </div>
