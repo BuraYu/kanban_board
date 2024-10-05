@@ -14,6 +14,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  /* remove this */
+  background-color: #000112;
 }
 
 img,
@@ -105,6 +107,7 @@ h6 {
   font-weight: 700;
   font-style: normal;
   line-height: 0.9375;
+  letter-spacing: 0.15rem;
 }
 
 .font-body-l {
@@ -118,4 +121,3 @@ h6 {
   font-size: 0.75rem;
   line-height: 0.9375;
 }
-
