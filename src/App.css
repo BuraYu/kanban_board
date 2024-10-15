@@ -59,6 +59,8 @@ h6 {
   --medium-grayish-blue: #3e3f4e;
 
   --pure-white: #ffffff;
+  --board-background: #ffffff;
+  --white-font: #ffffff;
   --light-background: #f4f7fd;
 
   --almost-black: #000112;
@@ -73,6 +75,19 @@ h6 {
 
   /* Fonts */
   --font-primary: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  --background-color: rgb(201, 111, 111);
+  --color: rgb(0, 0, 0);
+
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+body.dark-mode {
+  --color: rgb(255, 255, 255);
+  --background-color: rgb(0, 0, 0);
+  --board-background: #2b2c37;
 }
 
 .font-heading-xl {
@@ -123,4 +138,3 @@ h6 {
   font-size: 0.75rem;
   line-height: 0.9375;
 }
-

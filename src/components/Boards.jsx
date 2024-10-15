@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react";
 import board from "../assets/icon-board.svg";
 import { ReactComponent as Logo } from "../assets/icon-board.svg";
+import useDarkMode from "./useDarkMode";
 
 const Boards = () => {
   const [boards, setBoards] = useState([
@@ -17,6 +18,7 @@ const Boards = () => {
     },
   ]);
 
+  const [darkMode, toggleDarkMode] = useDarkMode();
   return (
     <div className="boards--container">
       <div className="logo">Kanban</div>
@@ -43,7 +45,13 @@ const Boards = () => {
           </div>
         </div>
         <div className="sidebar-control">
-          <div className="dark-mode">darkmode</div>
+          {/* <div className="dark-mode">darkmode</div> */}
+          <input
+            type="checkbox"
+            id="darkmode-toggle"
+            onClick={() => toggleDarkMode()}
+          />
+          <label for="darkmode-toggle"></label>
           <span className="hide-sidebar-label">Hide Sidebar</span>
         </div>
       </div>
