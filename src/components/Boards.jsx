@@ -19,6 +19,8 @@ const Boards = () => {
   ]);
 
   const [darkMode, toggleDarkMode] = useDarkMode();
+
+  console.log(darkMode);
   return (
     <div className="boards--container">
       <div className="logo">Kanban</div>
@@ -50,6 +52,7 @@ const Boards = () => {
             type="checkbox"
             id="darkmode-toggle"
             onClick={() => toggleDarkMode()}
+            checked={darkMode}
           />
           <label for="darkmode-toggle"></label>
           <span className="hide-sidebar-label">Hide Sidebar</span>
