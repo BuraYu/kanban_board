@@ -1,7 +1,11 @@
+import Main from "./components/Main";
+import Sidebar from "./components/Sidebar";
+
 export default function Home() {
   return (
     <div className="">
-      <h1 className="text-red-500">Hello world</h1>
+      <Sidebar />
+      <Main />
     </div>
   );
 }
