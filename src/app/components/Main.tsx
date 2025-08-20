@@ -1,9 +1,17 @@
 import React from "react";
 
-const Main: React.FC<{}> = () => {
+interface mainProps {
+  sidebarOpen: boolean;
+  setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Main: React.FC<mainProps> = ({ sidebarOpen, setSidebarOpen }) => {
   return (
-    <div>
+    <div className="flex">
       <h1>Main</h1>
+      {sidebarOpen ? null : (
+        <button onClick={() => setSidebarOpen(!sidebarOpen)}>Open</button>
+      )}
     </div>
   );
 };
