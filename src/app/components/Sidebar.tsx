@@ -23,20 +23,35 @@ const Sidebar: React.FC<sidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
 
   return (
     <div
-      className={`bg-white dark:bg-darkGray h-vh w-[261px] ${
+      className={`bg-white dark:bg-darkGray h-screen w-[261px] flex flex-col ${
         sidebarOpen ? "" : "hidden"
       }`}
     >
-      <button
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-        className="text-black dark:text-white"
-      >
-        Close
-      </button>
-      <button
-        onClick={handleChange}
-        className="bg-blue-500 dark:bg-blue-700 text-white px-4 py-2 "
-      />
+      <h1 className="px-8 py-9 text-2xl">Kanban</h1>
+      <div className="flex-1 flex flex-col justify-between">
+        <div>
+          Allboards
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+        <div className="flex flex-col">
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="text-black dark:text-white"
+          >
+            Close
+          </button>
+          <button
+            onClick={handleChange}
+            className="bg-blue-500 dark:bg-blue-700 text-white px-4 py-2 "
+          >
+            Darkasdasdasdasd
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
