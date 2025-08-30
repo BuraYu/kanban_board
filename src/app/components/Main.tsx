@@ -7,7 +7,7 @@ interface mainProps {
 
 const Main: React.FC<mainProps> = ({ sidebarOpen, setSidebarOpen }) => {
   return (
-    <div className="flex">
+    <div className="flex bg-lightGrey dark:bg-veryDarkGray w-full">
       <h1>Main</h1>
       {sidebarOpen ? null : (
         <button onClick={() => setSidebarOpen(!sidebarOpen)}>Open</button>
